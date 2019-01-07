@@ -1,4 +1,4 @@
-package com.zql;
+package com.zql.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.socket.config.annotation.WebSocketConfigurer;

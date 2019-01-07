@@ -1,4 +1,4 @@
-package com.zql;
+package com.zql.controller;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

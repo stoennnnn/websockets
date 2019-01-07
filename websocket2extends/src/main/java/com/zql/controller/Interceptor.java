@@ -1,4 +1,4 @@
-package com.zql;
+package com.zql.controller;
 
 /**
  * Created by 26725 on 2019/1/7.
