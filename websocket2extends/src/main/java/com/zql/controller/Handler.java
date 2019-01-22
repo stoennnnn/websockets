@@ -26,6 +26,7 @@ public  class Handler implements WebSocketHandler {
     public void afterConnectionEstablished(WebSocketSession webSocketSession) throws Exception {
         if (Optional.ofNullable(webSocketSession).isPresent()&&
                 Optional.ofNullable(webSocketSession.getHandshakeHeaders()).isPresent()){
+          //  String userName=webSocketSession.getAttributes(Constants.SESSION_USERNAME);
             List<String> realIps = webSocketSession.getHandshakeHeaders().get("x-real-ip");
             if (Optional.ofNullable(realIps).isPresent()&&!realIps.isEmpty()){
                 String realIp = realIps.get(0);

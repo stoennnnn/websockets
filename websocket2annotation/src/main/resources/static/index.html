@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>websocket2extends</title>
+  <title>My WebSocket</title>
 </head>
+
 <body>
 Welcome<br/>
-<input id="text" type="text"/>
-<button onclick="send()">Send</button>
-<button onclick="closeWebSocket()">Close</button>
+<input id="text" type="text" /><button onclick="send()">Send</button>    <button onclick="closeWebSocket()">Close</button>
 <div id="message">
 </div>
 </body>
@@ -18,7 +16,7 @@ Welcome<br/>
 
     //判断当前浏览器是否支持WebSocket
     if('WebSocket' in window){
-        websocket = new WebSocket("ws://127.0.0.1:8001/websocket2");
+        websocket = new WebSocket("ws://127.0.0.1:8084/websocket2annotation/socket/");
     }
     else{
         alert('Not support websocket')
